@@ -1,0 +1,61 @@
+cloud computing:-	services
+
+server-a server is the thing which gives the services
+
+//clouds
+aws(user friendly when u compare with other clouds)
+azure
+google cloud
+oracle cloud
+rack space
+digital ocean
+alibaba cloud
+
+in the case of cloud - the more resources you use - the less amount u pay
+
+pricing
+suport
+flexibility
+
+-------------------------------------------------------------------------------------------
+os(server version)
+hardware(cpu,ram,storage)
+web server - website - aec.edu.in
+
+
+outlook
+
+//software layer
+email content
+email software(microsoft exchange)
+
+os //platform layer
+hardware //infrastucture layer
+
+--------------------------------------------------------
+on-premises server//the server which is on the campus those are called on-premises server
+-----------------------------------------------------------------------------------
+cloud
+
+cloud characterstics:-
+
+on demand self service
+resouce pooling - cloud point
+broad network access- wehere ever the server you created you can access that server through out the world
+elasticity - 
+metered service - pay as you go
+
+cloud models:-
+public cloud (aws,azure,gcloud,oracle)
+private cloud (ex:- aditya)
+community cloud 
+hybrid cloud(private & public cloud)
+
+cloud services:-
+saas(outlook)
+paas
+Iaas(VM)
+
+
+
+
