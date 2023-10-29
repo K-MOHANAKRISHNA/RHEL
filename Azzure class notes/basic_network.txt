@@ -1,0 +1,155 @@
+versions of ip:
+	ipv4
+		32 bits
+		40ctates
+		decimal number system
+
+
+		10.10.10.1
+		8+8+8+8=32
+		valid ip : 0.0.0.0 - 255.255.255.255
+		0.0.0.0 - internet ip address
+		255.255.255.255 - internet broadcast address
+		pow(2,32)=4.294 billions entire range of vp4
+	ipv6
+		128bits
+		8 hexa decimal
+		hexadeecimal number system
+		1hex = 16 bits
+
+---------------------------------------
+different classes of ip address (ipv4):
+-class A
+	0.0.0.0 - 126.255.255.255	(1-126)
+-class B
+	128.0.0.0 - 191.255.255.255	(128-191)
+-class C
+	192.0.0.0 - 223.255.255.255	(192-223)
+
+-class D:				--
+	224.0.0.0 - 239.255.255.255	 |
+					  ---multicasting purpose we use these
+-class E				 |
+	240.0.0.0 -255.255.255.255	--
+		
+---------------------------------------------------
+types of ip address:
+-private				
+	A	10.0.0.0-10.255.255.255
+	B	172.16.0.0 - 172.31.255.255
+	C	192.168.0.0 - 192.168.255.255
+-public
+	A	1.0.0.0 - 9.255.255.255
+		11.0.0.0 - 126.255.255.255
+
+	B	128.0.0.0 - 172.15.255.255
+		172.32.0.0 - 191.255.255.255
+	
+	C	rest are public
+------------------------------------------------------
+from now all we talk about private:
+
+	A:	pow(2,24) = that many private ips we can use
+	B:	pow(2,16)=65K
+	C:	pow(2,8)
+
+subnetting:
+	breaking down large network into small network
+CIDR - classless inter domain routing
+
+class				prefix(CIDR) 		subnetmask
+A				/8			255.0.0.0
+B				/16			255.255.0.0
+c				/24			255.255.255.0
+
+ex:
+requirement = X
+Aditya = 20000
+
+pow(2,n)=X
+pow(2,n)=20000
+
+if n==11
+	pow(2,11)=2048
+n==14:
+	pow(2,14)=16247
+n==15
+	pow(2,15)=32768
+
+32-15=17(CIDR)
+/17
+
+ex:
+X=120
+
+pow(2,7)=128
+32-7=25
+CIDR 
+/25
+
+----------------------------------------------------------
+127 ip is for loop back ip address
+
+https://curryncode.com/2020/08/31/privatepublic-ess-classes/
+
+for better understanding...
+------------------------==============================================
+//2009
+
+NAT - network address translation protocol
+converts private ip to public ip
+
+ISO -set of rules for small communication
+
+by using ISO rules
+any internet app can connect with other apps..
+one product with remaining products...
+
+OSI model- open system intercommunication
+
+7layers
+
+https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-7-layers.jpg
+
+(data)7: Application layer :- http,https,smtp,pop3,imap
+
+smtp - simple mail transfer protocol
+difference blw pop and imap
+
+(data)6:Presentation layer:- translation,encryption will happen in this layer ,compression
+
+(data)5:session layer:- session establishment,authentication,authorisation
+
+(segment)4:Transport layer : - segmentation   (sender port,segment,reciever port)
+//(25,seg,143)
+smtp port -25
+imap port - 143
+
+(packet)3:Network layer:-  ip addressing    ,routing protocol,best path selection
+adding ip address to segment
+(sender ip,port,seg,port,ip(gmail service))
+
+(frame)2:data link layer :- (source mac, packet,destination mac)
+
+
+//getmac in cmd to get physical address(uses 48 bit)
+
+1:physical layer:
+
+electro magnetic waves,electrical waves,light
+
+//to remember : please do not throw savage pizza away
+------------------------------------------------------------------------------
+
+NSG - network security group
+
+NAT - network address translation
+
+
+
+
+
+
+
+
+
