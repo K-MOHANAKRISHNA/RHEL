@@ -1,0 +1,54 @@
+vi
+vim
+nano
+
+
+vim filename
+i(to insert)
+esc(to come back to command name)
+shift + :Wq( to save whatever we written and then q-->quit )
+
+
+shift + :q!(withot saving the whatever we done in file it saves)
+
+it wont change modifications whatever we done...
+
+//view mode in visual mode you can copy and paste..
+in command mode
+v (for visual mode)
+
+copying in visual mode
+
+y(copy)
+p(paste)
+
+vimtutor //it will gives detailed description about vim
+
+
+
+
+
+vim
+
+dd(deletes the line)   2dd 3dd
+esc
+:wq!(forcefully - '!')
+
+yy //copy
+
+p
+
+2yy  //2 lines copied
+p
+
+
+
+esc 
+:set nu //it sets the numbers
+:set nonu  //to unset the nos
+
+
+=================================================================
+
+nano filename
+

@@ -1,0 +1,45 @@
+file/directory permissions - to access
+
+which type of acces(read or read or write read/write/execute)
+
+user(owner)/group/other permissions
+
+user permissions override the group permissions
+griup ----                    other permissions
+
+
+-----------------------------------------------------------------------
+
+
+user
+cse1		cse1		ECE     
+cse2		cse2		ECE	
+
+ece1		ece1		CSE
+ece2		ece2		CSE
+
+root user
+/home/sensors
+
+dir - sensors
+fil-iot
+---------------------------------
+to change the permissions or ownership
+this command applies on files and directories
+to change permissions read write exe
+
+chmod g+w /home/sensors   giving write permission to the group for the directory(sensors)
+chmod g-w /home/sensors	   means removing write permission to the group for the directory
+
+
+//adding permissions means +
+//removing means -
+u for user
+g for group
+o for others
+
+to change the ownership for the users or group
+
+chown :ECEC /home/sensors
+
+---------------------------------------------------------------------

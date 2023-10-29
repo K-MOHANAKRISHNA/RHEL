@@ -1,0 +1,21 @@
+SSH - secured shell - 22
+remote connections
+//protocols used for remote connections
+	ssh-linux,unix - encrypted
+	telnet - 23(port num)(it doesn't have encrypted format..)-plain text
+	rlogin - it supports limited time connections
+	rdp(remote desktop protocol) - secured connection - for windows- 3368 port num
+
+ip and port number = ipsocket (65536 port numbers total)
+
+//for more refernece search "default port numbers" in goggle
+//80 unsecure 443 secure (port numbers)
+//ping website - to know ip address
+//in linux to check ip address
+	ifconfig
+	ip addr show
+
+
+-----------------------------------
+bridged
+NAT(network address translation) - it is like hotspot

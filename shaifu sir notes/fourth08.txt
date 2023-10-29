@@ -1,0 +1,62 @@
+ubuntu - desktop version
+centos - server version 
+ 
+centos is more flexible than remaining server versions
+
+~ means home directory
+
+if chaithanya logged in then ~ is home directory of chaithaya
+
+parent directories have full control on sub directories
+
+
+DOS - 8gb
+fat32 - 1tb
+ntfs
+
+rmdir works if that directory is empty then only it will delete
+
+we can use rm -r directory name
+~ as /root
+
+mkdir -p ~/acet/cse
+
+cp -r ~/aec/cse1 .
+
+. means existing directory(meand presewnt directory we are working)
+
+cp -r /root/aec/cse1 /root
+
+similarly we can use mv
+
+//tasks
+
+* Open a terminal window that will provide a bash prompt.
+* Create an user named student
+* Change student password to T3st1ngT1me
+* Display the current time and date.
+* Use the wc command and bash shortcuts to display the size of /etc/passwd
+* Display the first 10 lines of /etc/passwd
+* Display the last 10 lines at the bottom of the /etc/passwd
+* Repeat the previous command, but use the -n 20 option to display the last 20 lines in the
+file.
+* Execute the date command without any arguments to display the current date and time.
+* Use bash history to display just the time.
+* Log into your student account
+* In your home directory, create sets of empty practice files to use for the remainder of this
+lab. 
+Create six files with names of the form songX.mp3.
+Create six files with names of the form snapX.jpg.
+Create six files with names of the form filmX.avi.
+In each set, replace X with the numbers 1 through 6.
+
+From your home directory, move the song files into your Music subdirectory, the snapshot
+files into your Pictures subdirectory, and the movie files into your Videos subdirectory.
+
+In your home directory, create three subdirectories for organizing your files into projects.
+Call these directories friends, family, and work. Create all three with one command.
+
+Change to your home directory. Attempt to delete both the family and friends projects with a
+single rmdir command.
+
+Use another command rm -r that will succeed in deleting both the family and friends folders.

@@ -1,0 +1,99 @@
+you can change the primary group of the existing user(but primary group is mandatory for su....its not possible to delete the primary group)
+
+and primary group is only one group exits (bydefault userid and group id is maped to the user but you can change the primary group of a particular user)
+
+//same will be applied in another versions like ubuntu all those things
+
+first you need to create a new group to cgange the primary group of the user
+
+//then this user primary group is changed
+usermod -g "group-name" username
+
+groupadd CSE (general  /userid 1003 /groupid 1003 for this group id is 1004)
+usermod -g CSE tse (/user id 1003 /groupid(primary group) 1004)
+
+to set default means as previous
+then usermod -g "username bcoz i.e group name " user
+
+usermod -g tse tse
+//you can use groupid instead of groupname
+
+----------------------------------------------------------
+//to add a user to the secondary group
+
+usermod -aG <group> <user>  //here if we use -aG meand it will append the user to the secondary new group
+                             //if you use -G instead of -aG then it will delete the user from the previous secondary group it will add the user to the new secondary group
+if you -aG then muliple groups can exists for a particular user
+
+
+----------------------------------------------------
+
+if you see group in /etc
+then it shows how many users are there for a particular group indetail
+
+-----------------------------------------------------------
+user1                              user2
+hr -p                                 hr - secondary group
+
+if you do any changes leke eprmissions in hr group then it will apply for the users who are there in a group
+
+--------------------------------------------------------------
+to add multiple users for a single group 
+
+syntax:
+
+
+
+-----------------------------------------------------------
+
+you can check
+id username
+it shows the existing group of a particular user
+
+getent group groupname
+
+//it shows the members in that group...
+
+-------------------------------------------------
+//permissions to a group
+
+for giving sudo permissions for a group of people
+
+go to /etc/sudoers.d/
+
+then create a file with groupname(whatever the groupname you used)
+cat > CSE
+%groupname	ALL=(ALL)	ALL
+
+save it
+thats enough then the users who are tthere in cse group those have sudo permissions
+
+so now the persons who are in cse group those have sudo permissions
+upto now only tse is there in CSE group
+--------------------------------------------
+
+
+------------------------------------------------------------------
+
+//doubts in this session
+
+how to add multiple users to a particular secondary group
+
+using vim editor you can add multiple users for a particular group
+
+vim /etc/group
+cse 1003:tse,chaithanya,student
+
+then save
+then these users will get permissions
+------------------------------------------------------------------------
+
+how to remove a particular user from a secondary group without adding that user to another secondary group
+
+then got to that group in etc
+then use edit button 
+vim /etc/group
+then i
+then remove that user from group by editing then save that file
+then particular user will be removed from that group
+---------------------------------------------------

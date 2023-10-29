@@ -1,0 +1,71 @@
+22-07-2022	thursday
+
+operting system:-
+desktop os -personal work(windows version)
+server version
+
+security os
+network os - router
+moile os - android,apple
+IoT os -arudino,rasberry pi
+------------------------------------
+commands in cmd :-
+
+devmgmt.msc -it shows device management
+diskmgmt.msc - disk management
+ncpa.cpl   - connections tab
+msinfo32 - gives all details related to the computer
+control - to open control panel
+dxdiag - daigonal check
+------------------------------------------------- 
+types of os : 
+	-open source - All linux	---
+					   | - > source code
+	-closed source - All windows	---
+
+SOURCE CODE:
+the code that is used to design/develop the os 
+os is also called system software
+os is bridge to software and hardware
+when source code is closed the user cant have access to see
+---------------------------------------------------------
+open source 
+	open for modification,free for distribution,free to edit
+closed source 
+	there is no access to the code 
+
+----------------------------------------------------------
+shells in windoes:
+   -powershell
+   -gui
+   -cli
+shellis a user interface -> i/o communicate with kernel
+shell-kernel(source code/hardware)
+shell has direct actions from users
+kernel dont have 
+
+user can access only shell but not kernel
+--------------------------------------------------------------
+shells in linux:
+
+GUI:
+	-gnome gui(which has icons present we are using)
+	-kde gui(no icons on desktop)
+CLI:
+bourne shell
+kprne shell
+z shell
+BASH (borne again shell)-mostly used now a days
+
+GUI is not flexible and not user friendly in linux
+linux fully secured,mainly commands
+======================================================
+types of users in any os
+
+adminstrator user - full access - owner -super user
+standard user - limited access
+
+types of users In LINUX
+
+root(like adminstrator account)
+standard user

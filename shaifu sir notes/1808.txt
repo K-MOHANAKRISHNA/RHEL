@@ -1,0 +1,74 @@
+command:-   timedatectl
+
+its show time and date in clear
+
+
+------------------------------------------
+//if time and date are wrong
+to set the timezone:
+
+timedatectl  list-timezones   //it shows available timezones in RHEL
+
+timedatectl list-timezones | grep Asia   //to filter the timezones
+                                           //here we filtewring timezones related to asia
+
+
+//our timezone  -  Asia/Kolkota
+
+timedatectl set-timezone Asia/Kolkata
+
+//to set the time
+
+timedatectl set-time HH:MM:SS
+
+ex: timedatectl set-time 09:55:30
+
+if it shows Ntp means it automaticallly sets the time based on the network
+
+//NTP -network time protocol
+------------------------------------------
+to filter 
+| more
+| grep
+
+------------------------------------
+//in shadow file contains encrypted password and password policy
+it contains 
+9 fields
+
+uername:encrypted_pw:afterhow many days you changed the password(from 1970):
+minimum-password-age(default 0):maximum-password-age(bydefualt 99999):warning(before expires the password it asks to change a password bydefault - 7):
+inactive state(upto 14 days //if the user didnt change the password after warning after 14 days automatically locked up):::for new features reaming all
+
+
+for viewing account aging information
+chage -l username
+chage -l tse
+
+you can change the fields by using the command
+
+//general syntax chage -"field"  days username
+
+chage -m   days      usrname         //minum age of a passwd
+chage -m 0  tse
+chage -M                   //maximum age of a passwd
+chage -M 199
+chage -W 7         //7 days before warning before password expires
+chage -I 7        //inactive (if he inactive 7 days after password expires then account locked)
+
+chage -m 0 -M 30 -W 7 -I 7 tse
+
+-------------------------------------------------------------------
+in enecrypted the password field contains
+
+$Hashing algorithm$salt$hashed password
+
+SHA - secure hashing algorithm
+salt-extra bits to make it more powerfull
+then hashed password
+
+in rhel
+SHA512 is used bydefault (it supports MD5,SHA 256,SHA 512)
+
+----------------------------------------------------------------------
+

@@ -1,0 +1,86 @@
+system users 1-999(ids)
+standard users (from `1000 onwards ids will be start..)
+
+
+interactive login(/bin,/bash) (root,standard users)
+system users (/bin,/sbin,/no login)
+standard users = system users(means same permissions)
+
+id username (to see id of a particular su from root)
+
+to give description in passwd
+usermod -c "desc" username
+
+ex:
+cd 
+usermod -c "hello redhat training " nani
+
+in passwd it changes the description of the particular user(which we have mentioned)
+
+-----------------------------
+usermod -L username(to lock the user now he unable to login)
+
+usermod -L nani 
+
+it will nani user then he cant access his account
+
+
+usermod -U username(to unlock the user then he can able to login)
+
+usermod -U nani
+
+--------------------------------------------
+
+su - nani (here nani home directory wll come)
+su nani (here the previous user directory(home directory ) will come)
+
+-------------------------------
+//s used for to assign shell
+usermod -s /sbin/nologin username (that particular user dont have any interactive shell)
+
+usermod -s /bin/bash username (now he can have interactive login)
+
+------------------------------------------------------------------------------
+usermod -u customised-user-id existing-user-name
+
+usermod -u 1111 chaithanya   ( to change userid)
+
+-------------------------------------------------------------------------------
+id username
+
+gives userid group id and groups
+
+user have two types of groups (primary,seconday group)
+
+every user have one primary group bydefault
+and every user can have multiple secondary groups
+
+--------------------------------------------------------
+
+/etc/group(to know about the groups)
+
+---------------------------------
+groupadd name  //to add new group
+
+it will just add the new group (it wont assign any user for that group)
+------------------------------------
+groupdel name //to delete the existing group
+
+it will delete the group
+-------------------------------------------------
+
+modify the id of the existing group
+
+groupmod -g id group-name
+
+--------------------------------------------------
+
+groupmod -n "new name for existing group name" actual-group-name
+
+//to change the group name of the existing group
+
+-------------------------------------------------------
+
+
+
+

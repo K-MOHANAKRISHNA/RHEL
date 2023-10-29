@@ -1,0 +1,175 @@
+links:
+------
+multiple links to files
+to avoid the redundancy
+
+types of links:
+
+1.hard link
+2.symbolic link or soft link
+
+mostly used--->hard links--->by administrators
+
+
+hard links:
+----------
+1.connecting the files in the same file system,links between files.
+2.if one file is modified then the connecting files will be modified.
+3.if one file is deleted then the remaining files will be not deleted.
+
+limitations:
+-----------
+1.hard links for only files not for directories
+
+2.file system limitation
+
+3.file should be in single file system
+
+os formats the file system
+format creates a file system 
+
+command to create a hard link:
+------------------------------
+1)create a file1
+2)create a another directory
+3)link using ln command 
+
+command:
+--------
+ln file_name ~/directory_name
+
+checking if both files are same:
+-------------------------------
+command:
+-------
+ls -li file_name
+
+description:
+-----------
+it is used to identify the inode numbers
+inode number--->will be matched with another file linked to it .
+
+
+soft link:
+----------
+Soft links to connect file and if source file is deleted the linked file will be deleted
+
+command:
+-------
+ln -s file ~/cse
+
+where:
+-----
+file --> name of file
+cse ---> directory name
+
+description:
+------------
+1.soft link can be created for direcctories
+
+2.if source file is deleted then destination also delated
+
+3.source file is cannot be deleted in soft link
+
+4.if source is deleted we can not do anything with destination 
+and it is known as dangling link
+
+
+
+
+editors:
+--------
+
+in linux 3 types:
+
+1.vi
+2.vim
+3.nano editor
+
+1)vi editor:
+ ----------
+old type of editor
+
+
+2)vim editor:
+-------------
+command:
+--------
+vim newfile_name 
+
+description:
+------------
+create file and we can the modify the file
+
+press i to goto insert mode
+i ----> allows to insert the data
+
+esc button to go to command mode
+
+shift+: ---> to save
+
+wq ---->to write and quit
+
+:q -----> to go out of file
+
+:q! ---->quits without saving the modified line in file
+
+
+v ---> visual mode ---> copy or paste operations
+
+put the cursor over the line which line u want to copy
+and press y
+
+y ---yank(copy)
+p --- paste
+
+
+vimtutor ----> to know the informatiom about the various commands
+
+3)nano editor:
+ ------------
+command:
+-------
+nano filename
+
+u enters into command mode
+there will be options available
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

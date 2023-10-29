@@ -1,0 +1,24 @@
+rwxrwxrwx
+//to change permissions
+chmod u/g/o+rwx
+o-rwx
+
+octal method
+read write exe
+4     2     1 =7 means full permission
+
+5 = read and execute 
+
+777 means for users ,groups,others full permissions for all
+//this is superuser number
+
+chmod 777 /home/test.mp3
+
+chmod 747 /home/test.mp3
+
+chmod 740 /home/test.mp3
+
+//in 19lpa 
+chmod 644 /home/test.mp3
+user readwrite  group read others read
+

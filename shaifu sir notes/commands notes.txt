@@ -1,0 +1,242 @@
+//related to ubuntu
+
+alt+f2
+gnome-terminal //to open terminal
+cntrl+g  (work with computer virtual)
+cntrl + alt(mouse unlock)
+==================
+# root user
+sudo su
+then enter password
+$ means normal one 
+
+=========
+whoami 
+use: used to know whether it is user account or root account
+
+==========
+exit
+use:used to exit from root to standard user
+
+===============
+ls
+use: used to show list of files or directories in that folder
+
+ls -l or ll (longlist)
+use:it gives the clear idea which is file and which is directory including permissions 
+first character id "d" then it is directory
+if other than "d" that is file
+
+ls -la //it shows hidden files
+
+ls -lR //it gives the details about all the files and subdirectories in the present working directory
+
+
+
+===============
+//to create a empty file
+
+touch filename1 filename2 .... filenamen //it will create empty files at once at same level
+
+if files exists it changes the timestamp
+
+============================================
+to create a file
+
+cat > (filename)
+ex: cat > chaithu
+
+it creates file and enter content 
+after entering contnt press cntrl+z to come out
+
+-----------------------------
+to see content in the file
+cat (filename)
+
+cat tse
+
+less filename
+
+more filename
+-----------------------------------
+cat filename1 filename2>filename3 //joins two files (1 & 2) and stores the output of them in a new file3
+//you can concatenate n number of files to the newfile
+
+for appending to the existing file use >> in place of >
+----------------------------------
+to add more content to the existing file
+cat >> (filename)
+it wont disturb previous content its just addnew data to the existing data
+----------------------------------------------------------------
+to convert to uppercase all the letters in a file
+cat filename |tr a-z A-Z
+to convert to uppercase to lowercase
+cat filename |tr A-Z a-z
+
+===============================================
+to clear the screenn
+clear
+
+it clears the screen
+
+=======================
+
+cp filename1 filename2
+it copies content in file1 to file2 overwrite it
+it erases data in file2 and add data whichis present in file1
+-------------------------------------------------
+copying multiple files to the destination
+
+cp filename1 filename2 filename3 ....  destination
+//similary for mv command also
+
+cp sourcefile destination file(exists)
+
+//simply it overrites the the destination file with source file without asking to overwrite permission..
+
+cp -i sourcefile destinationfile(exists already with that name)
+//now it will ask to overwrite the file(if file exists) otherwise it normally creates with that..
+=====================
+
+mv (filename1) (filename2) .... destination
+
+for renaming also we will use this command
+
+mv sourcefile destination file(exists)
+
+//simply it overrites the the destination file with source file without asking to overwrite permission..
+
+mv -i sourcefile destinationfile(exists already with that name)
+//now it will ask to overwrite the file(if file exists) otherwise it normally creates with that..
+
+
+=========================
+to hide the file:-
+mv filename .filename
+
+to unhide the file:-
+mv .filename filename
+
+================================
+cd ..  //to come back one step(the directory changed to one step back)
+
+cd  //if you use cd then it will come to the home directory of a user(who logged in)
+ex:
+root@localhost etc # cd
+root@localhost ~ #
+
+cd with options 
+ex: cd /home/directory //it will change the directory 
+
+cd - //to move to your previous directory
+
+===========================
+pwd
+present working directory it shows
+
+=========================
+cd directory 
+to go to that directory
+==========
+to create a new directory
+mkdir
+
+to create multiple directories at the same level
+mkdir filename1 filename2 filename3....
+mkdir {filename1,filenme2,...}
+mkdir filename{1..3}
+//it creates 3 directories filename1 filename2 filename3
+mkdir file{1..2}filedoc{1..3}
+//it creates 6  directories named file1filedoc ...file1filedoc3 file2filedoc1 .... file2filedoc3
+-------------------------------------
+too create a directory and in that sub subdirectory
+
+mkdir -p /directory1/directory2
+it creates directory1 in that directory2
+=======================
+
+rm filename
+to remove the file
+
+rm -r directory  //to recursively delete all the directories and sub directories
+=============================
+
+rmdir
+
+to remove the empty directory
+
+==================================
+
+history
+
+to show the history
+===========================
+history | more
+
+to show more history
+==========================
+less filename
+
+more filename
+==========================
+find //to locate the files within the given directory
+
+ex: find /home/ -name notes.txt //command will search for a file notes.txt within the homedirectory and its subdirectories
+
+to find files in the current directory 
+
+find . -name notes.txt
+
+to look for directories
+
+find / -type d -name notes.txt
+
+===========================================================
+grep //it filters the data
+
+grep blue notepad.txt //it will search for the word blue in the notepad.txt file 
+//lines that contain the searched word will be displayed fully
+=============================================================
+df //it shows disk space usage
+df -m //to see the report in megabytes
+
+du //disk usage if you want to check how much space a file or dir takes
+du -h //in bytes,kilobytes
+=================================================================
+diff //it will compare two files and returns the unmatched line //it compares line by line
+===================================================================
+jobs //will display all current jobs along with their statuses .a job is a process that is started by the shell
+==========================================================================
+top //task manager 
+======================================
+echo //it add some content to the file
+
+echo hello,my name is nani>>name.txt
+
+==========================================
+hostname //it will display the hostname
+hostname -i //it gives ip adress of your network
+==================================================
+cntrl+c //to kill
+cntrl + z //to pause
+
+cntrl+s //to freeze the shell
+cntrl+q //to unfreeze
+
+cntrl+a //moves you to the begining of the line
+cntrl+e //to the end of the line
+ctrl+u  //clear from the cursor to the begning of the command line
+ctrl+k //clear from cursor to the end of the command line
+ctrl + leftarrow //Jump to the beginning of the previous word on the command line
+ctrl+rightarrow //Jump to the end of the next word on the command line.
+ctrl+r //Search the history list of commands for a pattern.
+
+
+multiple commands to execute at once 
+
+seperate them by ; or &&
+
+ex: cd /home;ls -l;cd
+cd /home && ls -l && cd
+it will execute commands one by one
+

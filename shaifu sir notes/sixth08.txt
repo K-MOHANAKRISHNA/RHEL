@@ -1,0 +1,43 @@
+three types of users
+root user(#)
+standard user($)
+system user(is like standard user and having only some permissions)
+(do not have any interacting logins)
+
+/bin /sbin are the home directories of sysytem users
+
+
+=======================================
+ps (shows process running)
+
+ps -a
+
+ps -au
+
+ps -u
+
+id
+//always userid for root is 0 //uid means userid //gid - group id
+
+//standard user ids start from 1001,1002,......
+
+in passwd 
+each line contains 7 parts
+username : x(password):userid:groupid:description:home directory:login info(shell prompt)
+
+in /etc shadow fgile will bethere where passwords will be there(in coded)
+
+/etc cat group   //it shows username password and gid
+
+in intervies they wont ask commands they will ask about directories and use of that
+in that what it contains  (directory navigation and settings) 
+
+su - user account //su - tse
+//to give sudo access to the standard user
+
+cd sudoers.d/   //in etc
+cat > username
+username	ALL=(ALL)	All
+
+if yopu give permissions to the standard user as sudo then only he can have permissions as a temporary root acount
+otherwise it will be act as standars account 

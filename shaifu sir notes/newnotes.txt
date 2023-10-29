@@ -1,0 +1,58 @@
+
+but here anyone can share and anyone can acces (if they connected to same netwrok )
+	-no proper security
+	-flexibility(anyone become a server and client)
+	-centralised maintainance is not there
+workgroup model
+peer - to - peer
+
+client server architecture(only one can share(fixed person) and remaining can accesss)
+
+to build any operating system (server version)
+	-cpu
+	-ram
+	-storage
+
+server versions
+windows-2016,2019,2020,2022
+lin-ubu server,redhar enterprice linux
+unix - hp unix,sun solaris
+
+only with these we cant build webserver
+
+webserver-->web service-->website
+
+examples for web services:
+	-web software-nginx,tomcat
+aec.edu.in,acet.ac.in,acoe.edu.in
+
+=======================================================
+comming to file server 
+
+to build any operating system (server version)
+	-cpu
+	-ram
+	-storage
+
+file server  
+file service - file transfer protocol(ftp),trivial ftp(tftp)
+file client softwares - filezilla,winscp
+
+==================================================================
+
+IP server
+
+IP service-DHCP(dynamic host configuration protocol)
+
+=======================================================================================================
+PHYSICAL server
+
+8gb,octa core,1 tb
+cpu,ram,storage
+
+TO MAKE AS WEB SERVER
+aec.edu.in
+web service
+server os - RHEL(redhat enterprice linux)
+
+

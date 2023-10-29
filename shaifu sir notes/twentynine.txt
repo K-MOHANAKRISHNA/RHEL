@@ -1,0 +1,39 @@
+BOTH ARE PROVIDED BY REDHAT
+BUT RHEL IS SUBSCRIPTION,CENTOS IF OPEN SOURCE
+
+-RHEL -(VERSION 9)
+-CENTOS(TRUE CLONE OF RHEL)(VERSION 9)
+
+Linus torvalds (developed linx os)(community edition)
+
+IN RHEL : 
+technical support(instant response)
+enterprice support(15Min)
+bussiness suppoer (30Min)
+
+unix - open network group9completely closed source)
+-more expensive
+-good security
+-24/7
+
+virtual consoles
+cntrl + alt +f3 (f3-f6)(bash-bourne shell)
+cntrl + alt + f1 (to come back)(gui)
+
+====================================================================
+basic commands
+
+date 
+it shows date
+
+/home 
+in that we found users 
+ls
+ it shows users in that directory
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+PROCESS MANAGEMENT
+
+applications used by the user
+system services/system files
+os
+resources -memory,cpu,storage
+
+ps  //it shows processes that are running in that shell
+w  //how many users in which terminals they logged in
+
+top  //VIRT(virtual) RES( resident )=(memories)
+//in s r-running i - ideal s-sleep x or z - zombie
+kill pid //to kill the user executed process
+
+pgrep -l -u username //for the user if he loggedin is shows the procces are running in that user shell
+
+pkill -SIGKILL -u <user>  //forcely logout the user ...it'll stop all the process that are executing
+//root user can stop any user by using this if he doubts someone installing malware like that..then he can forcely logout that user
+
+ps -au
+ps aux
+ps lax
+ps -ef
+
+
+

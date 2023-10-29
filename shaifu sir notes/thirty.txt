@@ -1,0 +1,66 @@
+//practice
+cat
+cd
+mv
+mkdir
+
+
+//petabyte
+
+//absolute path means 
+that starts from root directory to  destination
+ex: cd /home/chaithanya
+/home/chaithanya is the absolute path
+ /root is the absolute path for root directory
+
+to execute from history
+!number
+!12
+
+cd -
+//to step back like previous
+
+ctrl + c //to kill the process
+
+//mv (should be executed carefully in linux because it is online process(moves part by part and deletes part by part)
+
+ls -lR
+//to shows sub directories everything
+
+ls -lR| more
+line by line
+
+-----------------------------------------------------------------------
+man (manual of that command)
+man ls
+gives description of that command
+
+---------------------------------------------------------------------------
+useradd username  //to add the new user
+passwd username //to setup the password of the user
+
+userdel username //to delete the user 
+//its better to use -rf to delete everything
+
+-----------------------------------------------------
+head passwd  //it shows first 10 lines in the passwd file
+
+tail passwd  //it shows last 10 lines in passwd
+
+head -n "no" file //it shows particular no of lines in that file
+ex: head -n 5 passwd //shows first 5 lines
+
+here head is command -n 5 is option passwd is argument
+
+---------------------------------------------------
+wc file //wordcount 
+gives no of lines  words  characters 
+
+wc -l filename //gives no of lines
+wc -w filename //wordscount
+wc -c filename //characters
+
+--------------------------------------------clear
+
+
+
